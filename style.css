@@ -10,7 +10,7 @@ header{
     position: fixed;
     display: grid;
     grid-template-columns: auto 1fr auto;
-    width: 100%;
+    width: 100vw;
     padding: 24px 30px;
 }
 .logo{
@@ -27,6 +27,10 @@ header{
     padding: 12px;
     font-weight: 500;
     font-size: 15px;
+}
+a:hover{
+   font-weight: 650;
+   color: rgb(85, 53, 53);
 }
 .hide{
     display: none;
@@ -116,7 +120,7 @@ header{
     background-color: rgb(244, 238, 232);
     margin-right: 17px;
 }
-@media(max-width:600px){
+@media (max-width:700px){
     .buttons a{
         display: block;
         max-width: 450px;
@@ -125,12 +129,18 @@ header{
     }
 }
 .buttons a:first-child{
-    background-color: rgb(78, 78, 78);
+    background-color: rgb(44, 44, 44);
     color: aliceblue;
+}
+.buttons a:hover{
+    background-color: aliceblue;
+}
+.buttons a:first-child:hover{
+    background-color: rgb(103, 98, 98);
 }
 .footer{
     position:absolute;
-    width: 100%;
+    width: 100vw;
     text-align:center;
 }
 .footer a{
